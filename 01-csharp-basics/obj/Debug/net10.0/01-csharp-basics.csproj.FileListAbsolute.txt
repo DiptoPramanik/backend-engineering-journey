@@ -1,0 +1,15 @@
+E:\backend-engineering-journey\01-csharp-basics\bin\Debug\net10.0\01-csharp-basics.exe
+E:\backend-engineering-journey\01-csharp-basics\bin\Debug\net10.0\01-csharp-basics.deps.json
+E:\backend-engineering-journey\01-csharp-basics\bin\Debug\net10.0\01-csharp-basics.runtimeconfig.json
+E:\backend-engineering-journey\01-csharp-basics\bin\Debug\net10.0\01-csharp-basics.dll
+E:\backend-engineering-journey\01-csharp-basics\bin\Debug\net10.0\01-csharp-basics.pdb
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.GeneratedMSBuildEditorConfig.editorconfig
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.AssemblyInfoInputs.cache
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.AssemblyInfo.cs
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.csproj.CoreCompileInputs.cache
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.sourcelink.json
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.dll
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\refint\01-csharp-basics.dll
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.pdb
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\01-csharp-basics.genruntimeconfig.cache
+E:\backend-engineering-journey\01-csharp-basics\obj\Debug\net10.0\ref\01-csharp-basics.dll
