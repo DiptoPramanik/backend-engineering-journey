@@ -1,0 +1,15 @@
+E:\backend-engineering-journey\03-oop-in-csharp\bin\Debug\net10.0\03-oop-in-csharp.exe
+E:\backend-engineering-journey\03-oop-in-csharp\bin\Debug\net10.0\03-oop-in-csharp.deps.json
+E:\backend-engineering-journey\03-oop-in-csharp\bin\Debug\net10.0\03-oop-in-csharp.runtimeconfig.json
+E:\backend-engineering-journey\03-oop-in-csharp\bin\Debug\net10.0\03-oop-in-csharp.dll
+E:\backend-engineering-journey\03-oop-in-csharp\bin\Debug\net10.0\03-oop-in-csharp.pdb
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.GeneratedMSBuildEditorConfig.editorconfig
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.AssemblyInfoInputs.cache
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.AssemblyInfo.cs
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.csproj.CoreCompileInputs.cache
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.sourcelink.json
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.dll
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\refint\03-oop-in-csharp.dll
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.pdb
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\03-oop-in-csharp.genruntimeconfig.cache
+E:\backend-engineering-journey\03-oop-in-csharp\obj\Debug\net10.0\ref\03-oop-in-csharp.dll
