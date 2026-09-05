@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    // ✅ METHOD defined OUTSIDE Main() but inside the class
+    // METHOD defined OUTSIDE Main() but inside the class
     // Returns the product of two integers
     public static int Multiply(int a, int b)
     {
