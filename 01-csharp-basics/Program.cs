@@ -18,7 +18,7 @@ class Program
         Console.WriteLine("Hello World, Dipto!");
 
         // ========================
-        // 2. VARIABLES AND DATATYPES
+        // 2. VARIABLES(avoid duplicate declaration) AND DATATYPES
         // ========================
         int age = 24;           // whole number
         double height = 5.7;    // decimal number
@@ -35,7 +35,6 @@ class Program
         // ========================
         // 3. TAKING INPUT FROM USER
         // ========================
-        // FIX: Renamed to 'inputName' and 'inputAge' to avoid duplicate variable names
         Console.WriteLine("Enter your name:");
         string inputName = Console.ReadLine();  // reads a line of text from keyboard
 
@@ -82,10 +81,9 @@ class Program
             Console.WriteLine(i);
         }
 
-        // FIX: Added '//' to fix "while loops" — it was missing the comment marker
         // --- WHILE LOOP ---
         // Use when you repeat based on a CONDITION (don't know exact count)
-        int wi = 1;  // FIX: renamed from 'i' to 'wi' to avoid duplicate declaration
+        int wi = 1; 
         while (wi <= 5)
         {
             Console.WriteLine(wi);
@@ -108,7 +106,6 @@ class Program
         // ========================
         // 7. BASIC ARRAY
         // ========================
-        // FIX: Renamed to 'numbers1' to avoid duplicate 'numbers' declaration
         int[] numbers1 = { 10, 20, 30, 40, 50 };
 
         // Access using index (starts at 0)
@@ -126,9 +123,8 @@ class Program
         // ========================
         // 8. ARRAY WITH FIXED SIZE
         // ========================
-        // FIX: Renamed to 'numbers2' to avoid duplicate
         int[] numbers2 = new int[5];   // creates array of 5 integers (all 0 by default)
-        for (int fi = 0; fi < 5; fi++) // FIX: renamed loop var to 'fi'
+        for (int fi = 0; fi < 5; fi++)
         {
             numbers2[fi] = fi * 10;
         }
@@ -143,13 +139,13 @@ class Program
 
         // --- Hard approach: Jagged Array (array of arrays) ---
         int[][] arr = new int[5][];    // 5 rows, columns defined separately
-        for (int ri = 0; ri < 5; ri++) // FIX: renamed to 'ri'
+        for (int ri = 0; ri < 5; ri++) 
         {
             arr[ri] = new int[3];      // each row has 3 columns
         }
         for (int ri = 0; ri < 5; ri++)
         {
-            for (int ci = 0; ci < 3; ci++) // FIX: renamed to 'ci'
+            for (int ci = 0; ci < 3; ci++) 
             {
                 arr[ri][ci] = ri * ci;
             }
@@ -203,10 +199,10 @@ class Program
 
         // --- Hard approach: Jagged 3D Array ---
         int[][][] arr3 = new int[3][][];
-        for (int i3 = 0; i3 < 3; i3++) // FIX: renamed to 'i3'
+        for (int i3 = 0; i3 < 3; i3++) 
         {
             arr3[i3] = new int[2][];
-            for (int j3 = 0; j3 < 2; j3++) // FIX: renamed to 'j3'
+            for (int j3 = 0; j3 < 2; j3++) 
             {
                 arr3[i3][j3] = new int[4];
             }
@@ -215,7 +211,7 @@ class Program
         {
             for (int j3 = 0; j3 < 2; j3++)
             {
-                for (int k3 = 0; k3 < 4; k3++) // FIX: renamed to 'k3'
+                for (int k3 = 0; k3 < 4; k3++) 
                 {
                     arr3[i3][j3][k3] = i3 * j3 * k3;
                 }
@@ -302,7 +298,7 @@ class Program
         Console.WriteLine(str);   // prints: ab (rest are null chars)
 
         char[] letters = { 'C', 'S', 'h', 'a', 'r' };
-        for (int li = 0; li < letters.Length; li++) // FIX: renamed to 'li'
+        for (int li = 0; li < letters.Length; li++) 
         {
             Console.Write(letters[li]);
         }
@@ -338,16 +334,16 @@ class Program
         // ========================
 
         // Sort ascending
-        int[] sortArr = { 5, 2, 8, 1, 3 };         // FIX: renamed from 'num' (conflicts with foreach var above)
-        Array.Sort(sortArr);                        // modifies array in-place
+        int[] sortArr = { 5, 2, 8, 1, 3 };         
+        Array.Sort(sortArr);                        
         foreach (int x in sortArr)
         {
             Console.Write(x + " ");                 // 1 2 3 5 8
         }
 
         // Reverse array
-        int[] revArr = { 1, 2, 3, 4, 5 };          // FIX: renamed from 'n' (conflicts with enclosing scope)
-        Array.Reverse(revArr);                      // modifies array in-place
+        int[] revArr = { 1, 2, 3, 4, 5 };          
+        Array.Reverse(revArr);                      
         foreach (int y in revArr)
         {
             Console.Write(y + " ");                 // 5 4 3 2 1
@@ -378,9 +374,9 @@ class Program
             { 'G', 'H', 'I' },
             { 'J', 'K', 'L' }
         };
-        for (int si = 0; si < 4; si++) // FIX: renamed to 'si'
+        for (int si = 0; si < 4; si++) 
         {
-            for (int sj = 0; sj < 3; sj++) // FIX: renamed to 'sj'
+            for (int sj = 0; sj < 3; sj++) 
             {
                 Console.Write(st[si, sj] + " ");
             }
@@ -409,7 +405,7 @@ class Program
 
         // Dynamically fill string array from input
         string[] namess = new string[3];
-        for (int ni = 0; ni < 3; ni++) // FIX: renamed to 'ni'
+        for (int ni = 0; ni < 3; ni++) 
         {
             namess[ni] = Console.ReadLine();
         }
@@ -432,21 +428,21 @@ class Program
         // Requires: using System.Collections.Generic;
         // List is like an array but DYNAMIC (can grow/shrink)
 
-        IList<int> numList = new List<int>(); // FIX: renamed to 'numList'
+        IList<int> numList = new List<int>(); 
         numList.Add(10);
         numList.Add(20);
         numList.Add(30);
-        foreach (int ln in numList) // FIX: renamed to 'ln'
+        foreach (int ln in numList) 
         {
             Console.WriteLine(ln);
         }
 
-        IList<string> nameList = new List<string>(); // FIX: renamed to 'nameList'
+        IList<string> nameList = new List<string>(); 
         nameList.Add("Dipto");
         nameList.Add("Rahim");
         nameList.Add("Karim");
         nameList.Remove("Rahim");   // removes by value, not index
-        foreach (string nm in nameList) // FIX: renamed to 'nm'
+        foreach (string nm in nameList) 
         {
             Console.WriteLine(nm);
         }
@@ -468,12 +464,18 @@ class Program
             Console.WriteLine($"{item.Key} : {item.Value}");
         }
 
+        //Another to print 
+       /* foreach (var item in students)
+        {
+            Console.WriteLine($"{item.Key} : {item.Value}");
+        }*/
+
         // Handling duplicate keys safely
         string[] key = { "one", "two", "three", "two" };
         int[] value = { 1, 2, 3, 5 };
         Dictionary<string, int> dict = new Dictionary<string, int>();
 
-        for (int ki = 0; ki < key.Length; ki++) // FIX: renamed to 'ki'
+        for (int ki = 0; ki < key.Length; ki++) 
         {
             if (dict.ContainsKey(key[ki]))
             {
@@ -484,6 +486,16 @@ class Program
                 dict.Add(key[ki], value[ki]); // new key → add entry
             }
         }
+
+        //// If the key already exists, do not update it; keep the first value.
+       /* for (int ki = 0; ki < key.Length; ki++) 
+        {
+            if (!dict.ContainsKey(key[ki]))
+            {
+                dict.Add(key[ki], value[ki]); // new key → add entry
+            }
+           
+        }*/
         foreach (KeyValuePair<string, int> kv in dict)
         {
             Console.WriteLine($"{kv.Key} : {kv.Value}");
@@ -493,7 +505,7 @@ class Program
         // 18. FUNCTION CALL
         // ========================
         // Calling Multiply() defined above (outside Main)
-        int mulResult = Multiply(4, 5); // FIX: renamed to 'mulResult' to avoid duplicate 'result'
+        int mulResult = Multiply(4, 5); 
         Console.WriteLine(mulResult);   // 20
     }
 }
