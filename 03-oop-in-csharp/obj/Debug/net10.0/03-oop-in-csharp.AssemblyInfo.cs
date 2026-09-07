@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("03-oop-in-csharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f540bb7d88b954b23b00259ca7beb53e6ef88f5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bc1456bb3e1d9011a9f1a9fe5ca677537316392")]
 [assembly: System.Reflection.AssemblyProductAttribute("03-oop-in-csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("03-oop-in-csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
