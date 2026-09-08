@@ -1,0 +1,15 @@
+E:\backend-engineering-journey\04-abstraction-and-interfaces\bin\Debug\net10.0\04-abstraction-and-interfaces.exe
+E:\backend-engineering-journey\04-abstraction-and-interfaces\bin\Debug\net10.0\04-abstraction-and-interfaces.deps.json
+E:\backend-engineering-journey\04-abstraction-and-interfaces\bin\Debug\net10.0\04-abstraction-and-interfaces.runtimeconfig.json
+E:\backend-engineering-journey\04-abstraction-and-interfaces\bin\Debug\net10.0\04-abstraction-and-interfaces.dll
+E:\backend-engineering-journey\04-abstraction-and-interfaces\bin\Debug\net10.0\04-abstraction-and-interfaces.pdb
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.GeneratedMSBuildEditorConfig.editorconfig
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.AssemblyInfoInputs.cache
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.AssemblyInfo.cs
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.csproj.CoreCompileInputs.cache
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.sourcelink.json
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.dll
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\refint\04-abstraction-and-interfaces.dll
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.pdb
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\04-abstraction-and-interfaces.genruntimeconfig.cache
+E:\backend-engineering-journey\04-abstraction-and-interfaces\obj\Debug\net10.0\ref\04-abstraction-and-interfaces.dll
