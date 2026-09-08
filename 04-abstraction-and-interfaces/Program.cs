@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 
 // ============================================================
 //              OOP - ABSTRACTION USING ABSTRACT CLASS
@@ -98,7 +99,7 @@ class Program
         {
             Amount = 200,
             TransactionId = "37238222362",
-            MobileNumber = "01772554195"
+            MobileNumber = "01772454194"
         };
         bkashPayment.ValidatePayment();
         bkashPayment.ProcessPayment();
@@ -106,3 +107,173 @@ class Program
 
     }
 }
+*/
+
+/*
+// ============================================================
+//          OOP - ABSTRACTION USING INTERFACE
+// ============================================================
+//
+// An interface defines a set of methods that implementing
+// classes must provide.
+//
+// Payment interface defines:
+// 1. PaymentProcess()
+// 2. ShowInfo()
+//
+// CreditCardPayment and BkashPayment implement the Payment
+// interface and provide their own implementations.
+//
+// ============================================================
+using System;
+
+public interface Payment
+{
+    public void PaymentProcess();
+    public void ShowInfo();
+}
+
+public class CreditCardPayment : Payment
+{
+    public void PaymentProcess()
+    {
+        Console.WriteLine("Payment by Credit Card");
+    }
+
+    public void ShowInfo()
+    {
+        Console.WriteLine("Credit Card Payment Info");
+    }
+}
+
+public class BkashPayment : Payment
+{
+    public void PaymentProcess()
+    {
+        Console.WriteLine("Payment by Bkash");
+    }
+
+    public void ShowInfo()
+    {
+        Console.WriteLine("Bkash Payment Info");
+    }
+}
+
+class Program
+{
+    public static void Main()
+    {
+        Payment payment = new CreditCardPayment();
+        payment.PaymentProcess();
+        payment.ShowInfo();
+
+        Payment payment2 = new BkashPayment();
+        payment2.PaymentProcess();
+        payment2.ShowInfo();
+    }
+}
+*/
+
+
+// ============================================================
+//       OOP - INTERFACE & RUNTIME POLYMORPHISM
+// ============================================================
+//
+// INotify defines common methods:
+// Send(), Log(), Save()
+//
+// EmailNotify and SMSNotify implement the INotify interface
+// and provide their own implementations.
+//
+// The same interface reference can refer to different
+// implementing class objects.
+//
+// This demonstrates:
+// 1. Abstraction using Interface
+// 2. Interface Implementation
+// 3. Runtime Polymorphism
+//
+// ============================================================
+using System;
+using System.Collections.Generic;
+
+public interface INotify
+{
+    public void Send();
+    public void Log();
+    public void Save();
+}
+
+public class EmailNotify : INotify
+{
+    public string Email { get; set; }
+    public void Send()
+    {
+        Console.WriteLine("Sending Email to " + Email);
+    }
+     public void Log()
+    {
+        Console.WriteLine("Logging Email to " + Email);
+    }
+     public void Save()
+    {
+        Console.WriteLine("Saving DB to " + Email);
+    }
+}
+
+public class SMSNotify : INotify
+{
+    public string Phone { get; set; }
+    public void Send()
+    {
+        Console.WriteLine("Sending SMS to " + Phone);
+    }
+     public void Log()
+    {
+        Console.WriteLine("Logging SMS to " + Phone);
+    }
+     public void Save()
+    {
+        Console.WriteLine("Saving DB to " + Phone);
+    }
+}
+
+
+class Program
+{
+    public static void Main()
+    {
+        // INotify emailNotify = new EmailNotify{ Email = "test@example.com" };
+        // emailNotify.Send();
+
+        // INotify smsNotify = new SMSNotify { Phone = "01772454194"};
+        // smsNotify.Send();
+
+        // ============================================================
+        //                   IMPROVED APPROACH
+        // ============================================================
+        //
+        // Instead of creating and handling each notification object
+        // separately, we can store all notification objects in a list
+        // using the common interface type.
+        //
+        // This makes the code cleaner, shorter, and easier to maintain.
+        //
+        // ============================================================
+
+        IList<INotify> notifies = new List<INotify>
+        {
+            new EmailNotify { Email = "test@example.com" },
+            new SMSNotify { Phone = "01772454194"}
+        };
+
+        foreach(var notify in notifies)
+        {
+            notify.Send();
+            notify.Log();
+            notify.Save();
+        }
+        
+    }
+}
+
