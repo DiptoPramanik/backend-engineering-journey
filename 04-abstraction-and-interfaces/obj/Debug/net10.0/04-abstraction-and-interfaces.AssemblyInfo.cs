@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("04-abstraction-and-interfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aaa58f1c3f4165e57bb4b60f40183d46ce50d99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b477799ce224f0dfc0148d2c7d1ae7cbfb0921f")]
 [assembly: System.Reflection.AssemblyProductAttribute("04-abstraction-and-interfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("04-abstraction-and-interfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
