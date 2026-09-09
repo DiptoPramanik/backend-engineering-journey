@@ -174,7 +174,7 @@ class Program
 }
 */
 
-
+/*
 // ============================================================
 //       OOP - INTERFACE & RUNTIME POLYMORPHISM
 // ============================================================
@@ -276,4 +276,166 @@ class Program
         
     }
 }
+*/
 
+using System;
+using System.Collections.Generic;
+
+public interface INotify
+{
+    public void Send();
+    public void Log();
+    public void Save();
+}
+
+public class EmailNotify : INotify
+{
+    public string Email { get; set; }
+    public void Send()
+    {
+        Console.WriteLine("Sending Email to " + Email);
+    }
+     public void Log()
+    {
+        Console.WriteLine("Logging Email to " + Email);
+    }
+     public void Save()
+    {
+        Console.WriteLine("Saving DB to " + Email);
+    }
+}
+
+public class SMSNotify : INotify
+{
+    public string Phone { get; set; }
+    public void Send()
+    {
+        Console.WriteLine("Sending SMS to " + Phone);
+    }
+     public void Log()
+    {
+        Console.WriteLine("Logging SMS to " + Phone);
+    }
+     public void Save()
+    {
+        Console.WriteLine("Saving DB to " + Phone);
+    }
+}
+
+public class PushNotify : INotify
+{
+    public string Token { get; set; }
+    public void Send()
+    {
+        Console.WriteLine("Sending Push to " + Token);
+    }
+     public void Log()
+    {
+        Console.WriteLine("Logging Push to " + Token);
+    }
+     public void Save()
+    {
+        Console.WriteLine("Saving DB to " + Token);
+    }
+}
+
+public class NotifyContext
+{
+    public INotify notify { get; set; }
+    public NotifyContext(INotify notify)
+    {
+        this.notify = notify;
+    }
+    public void Process()
+    {
+        notify.Send();
+        notify.Log();
+        notify.Save();
+    }
+}
+
+/*
+class Program
+{
+    public static void Main()
+    {
+        // IList<NotifyContext> notifyContexts = new List<NotifyContext>
+        // {
+        //     new NotifyContext(new EmailNotify { Email = "test@example.com" }),
+        //     new NotifyContext(new SMSNotify { Phone = "01772454194"})
+        // };
+
+
+        //------------------In a Easier Way-----------------
+        IList<NotifyContext> notifyContexts = new List<NotifyContext>();
+        //EmailNotify emailNotify = new EmailNotify
+        INotify emailNotify = new EmailNotify
+        {
+            Email = "test@example.com"
+        };
+
+        //SMSNotify smsNotify = new SMSNotify
+        INotify smsNotify = new SMSNotify
+        {
+            Phone = "01772454194"
+        };
+
+        // notifyContexts.Add(new NotifyContext(emailNotify));
+        // notifyContexts.Add(new NotifyContext(smsNotify));
+
+        //-----------In a Easier way-------------
+        NotifyContext emailNotifyContext = new NotifyContext(emailNotify);
+        NotifyContext smsNotifyContext = new NotifyContext(smsNotify);
+
+        notifyContexts.Add(emailNotifyContext);
+        notifyContexts.Add(smsNotifyContext);
+        foreach(NotifyContext notifyContext in notifyContexts)
+        {
+            notifyContext.Process();
+        }
+    }
+}
+*/
+// ============================================================
+//                   ANOTHER WAY TO SOLVE THIS ---> Main()
+// ============================================================
+class Program
+{
+    public static void Main()
+    {
+
+        INotify emailNotify = new EmailNotify
+        {
+            Email = "test@example.com"
+        };
+
+        INotify smsNotify = new SMSNotify
+        {
+            Phone = "01772454194"
+        };
+
+        INotify pushNotify = new PushNotify
+        {
+            Token = "734637488"
+        };
+
+        NotifyContext emailNotifyContext = new NotifyContext(emailNotify);
+        NotifyContext smsNotifyContext = new NotifyContext(smsNotify);
+        NotifyContext pushNotifyContext = new NotifyContext(pushNotify);
+
+        // emailNotifyContext.Process();
+        // smsNotifyContext.Process();
+        IList<NotifyContext> notifyContexts = new List<NotifyContext>()
+        {
+            emailNotifyContext,
+            smsNotifyContext,
+            pushNotifyContext
+        };
+
+        foreach(var notifyContext in notifyContexts)
+        {
+            notifyContext.Process();
+        }
+
+    }
+}
